@@ -43,9 +43,9 @@ public class C04IfStatements {
 
         //택시요금 : 10000, 버스요금 : 3000, 킥보드 : 2000
         //사용자에게 얼마가 있는지 물어보고 구간별로 교통수단 추천
-        Scanner sc = new Scanner(System.in);
-        System.out.println("얼마나 있으세요? >>");
-        int  money = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("얼마나 있으세요? >>");
+//        int  money = sc.nextInt();
 
 //        if(money >= 10000){
 //            System.out.println("택시를 타세요");
@@ -67,5 +67,36 @@ public class C04IfStatements {
 //        }else {
 //            System.out.println("걸어가세요");
 //        }
+        //삼항 연산자 : 결과값 = 조건식 ? 반환값1 : 반환값2
+//        int answer = 1234;
+//        System.out.println("비밀번호를 입력하시오 >>");
+//        Scanner sc = new Scanner(System.in);
+//        int input = sc.nextInt();
+//        String result = (answer == input) ? "문이 열렸습니다." : "비밀번호가 틀렸습니다.";
+//        System.out.println(result);
+
+        //switch문 : if else 등의 조건문을 가독성 있게 표현 구문
+        System.out.println("원하시는 서비스 번호를 입력하시오 >>");
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+
+//        1: "대출업무입니다." 2:"예금업무입니다." 3:"적금업무 입니다": 0"상담사연결입니다." 그외 "잘못입력하셨습니다."
+        switch (input){
+            case 1:
+                System.out.println("대출업무입니다.");
+                break;
+            case 2:
+                System.out.println("예금업무입니다.");
+                break;
+            case 3:
+                System.out.println("적금업무 입니다.");
+                break;
+            case 0:
+                System.out.println("상담사연결입니다.");
+                break;
+            default:
+                System.out.println("잘못 입력하셨습니다.");
+                break;
+        }
     }
 }
