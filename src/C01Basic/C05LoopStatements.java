@@ -129,7 +129,10 @@ public class C05LoopStatements {
 //        Scanner sc = new Scanner(System.in);
 //        int input = sc.nextInt();
         boolean tureOrNot = false;
+
+        //2...63까지 나눠서 나눠지는 수가 있으면 소수아님
 //        for(int i=2; i<input; i++){
+//        //for(int i=2; i*i<input; i++){
 //            if(input%i == 0){
 //                //소수 아닌상황
 //                tureOrNot = true;
@@ -139,8 +142,9 @@ public class C05LoopStatements {
 //        if(tureOrNot == false){
 //            System.out.println("소수입니다.");
 //        }
-
+        //소수 문제 중요
         //1~24까지 수 중에 소수를 출력 2 3 5 7 11 13 17 19 23
+
 //        for(int i=2;i<25;i++){
 //            int count = 0;
 //            for(int j=2;j<=i;j++){
